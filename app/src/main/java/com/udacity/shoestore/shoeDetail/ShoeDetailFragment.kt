@@ -57,6 +57,7 @@ class ShoeDetailFragment : Fragment() {
 
     private fun vaidate(): Boolean {
         var isValid = true
+
         val name = binding.etName.text.toString()
         val size = binding.etSize.text.toString()
         val company = binding.etCompany.text.toString()

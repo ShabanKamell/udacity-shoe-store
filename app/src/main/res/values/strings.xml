@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create an account</string>
+    <string name="type_email">Please type your email address</string>
+    <string name="type_password">Please type your password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="click_next_to_read_instructions">Click next to read the instructions</string>
+    <string name="next">Next</string>
+    <string name="instructions">Instructions</string>
+    <string name="instructions_description">1. Click start to see shoes.\n2. You can add new shoes.\n3. You can see the details of any shoe.</string>
+    <string name="start">Start</string>
+    <string name="create_new_shoe">Create a new shoe</string>
+    <string name="name">Name</string>
+    <string name="type_shoe_name">Please type the shoe name</string>
+    <string name="company">Company</string>
+    <string name="type_company_name">Please type the company name</string>
+    <string name="size">Size</string>
+    <string name="type_shoe_size">Please type the shoe size</string>
+    <string name="description">Description</string>
+    <string name="type_description">Please type a description</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
+    <string name="required">Required</string>
 </resources>

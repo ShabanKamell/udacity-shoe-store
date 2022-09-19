@@ -10,4 +10,7 @@ data class Shoe(
     var company: String,
     var description: String,
     val images: List<String> = mutableListOf()
-) : Parcelable
+) : Parcelable {
+    val sizeString: String
+        get() = size.toString()
+}

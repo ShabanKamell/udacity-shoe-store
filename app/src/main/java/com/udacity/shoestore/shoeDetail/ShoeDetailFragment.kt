@@ -31,15 +31,18 @@ class ShoeDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setup()
+        observeSave()
     }
 
     private fun setup() {
-        binding.btnSave.setOnClickListener {
-            save()
-
-        }
         binding.btnCancel.setOnClickListener {
             findNavController().navigateUp()
+        }
+    }
+
+    private fun observeSave() {
+        viewModel.onSave.observe(viewLifecycleOwner) {
+            save()
         }
     }
 

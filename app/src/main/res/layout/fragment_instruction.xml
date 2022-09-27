@@ -9,6 +9,7 @@
             type="com.udacity.shoestore.instruction.InstructionViewModel" />
     </data>
 
+    <!-- ConstraintLayout is used to constraint the views in a flat layout instead of nested layouts. -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

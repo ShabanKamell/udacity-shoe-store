@@ -17,6 +17,7 @@ class ShoeDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentShoeDetailBinding
     private val viewModel: ShoeDetailViewModel by activityViewModels()
+    private val shoe = Shoe.empty
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,6 +26,7 @@ class ShoeDetailFragment : Fragment() {
     ): View {
         binding = FragmentShoeDetailBinding.inflate(inflater, container, false)
         binding.viewModel = viewModel
+        binding.shoe = shoe
         return binding.root
     }
 
@@ -48,13 +50,7 @@ class ShoeDetailFragment : Fragment() {
 
     private fun save() {
         if (!vaidate()) return
-        val item = Shoe(
-            name = binding.etName.text.toString(),
-            size = binding.etSize.text.toString().toDouble(),
-            company = binding.etCompany.text.toString(),
-            description = binding.etDescription.text.toString()
-        )
-        setFragmentResult(requestKey, bundleOf(bundleKey to item))
+        setFragmentResult(requestKey, bundleOf(bundleKey to shoe))
         findNavController().navigateUp()
     }
 

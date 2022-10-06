@@ -7,6 +7,10 @@
         <variable
             name="viewModel"
             type="com.udacity.shoestore.shoeDetail.ShoeDetailViewModel" />
+
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
     </data>
 
     <!-- ConstraintLayout is used to constraint the views in a flat layout instead of nested layouts. -->
@@ -40,6 +44,7 @@
             android:inputType="text"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
+            android:text="@={shoe.name}"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/name_text_view"
@@ -70,6 +75,7 @@
             android:inputType="text"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
+            android:text="@={shoe.company}"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/company_text_view"
@@ -100,6 +106,7 @@
             android:inputType="numberDecimal"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
+            android:text="@={shoe.size}"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/size_text_view"
@@ -130,6 +137,7 @@
             android:inputType="text"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
+            android:text="@={shoe.description}"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/description_text_view"
